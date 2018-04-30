@@ -1,0 +1,184 @@
+@charset "UTF-8";
+:root {
+  --color_theme: #00b3be;
+  --color_primary: #4a4a4a;
+  --color_accent: #91d763;
+  --color_background: #ffffff;
+  --font: Arial; }
+
+body {
+  font: 18px/1 Arial, sans-serif;
+  color: var(--color_primary); }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("http://fonts4web.ru/fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("http://fonts4web.ru/fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("http://fonts4web.ru/fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("http://fonts4web.ru/fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.user__img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle; }
+
+.user__name {
+  padding-left: 12px;
+  font-weight: 700; }
+
+.main-content {
+  max-width: 950px;
+  margin: 91px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px; }
+
+.header {
+  height: 59px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--color_background); }
+
+.logo {
+  flex: 0 0 auto;
+  display: block;
+  margin: 9px 0 10px 50px; }
+
+.search {
+  flex: 1 1 auto;
+  margin: 0 15px;
+  font-size: 14px;
+  max-width: 450px; }
+  .search__form {
+    max-width: 450px;
+    border-bottom: 1px solid;
+    border-color: var(--color_theme); }
+  .search__input {
+    border: 0;
+    background: var(--color_background);
+    width: calc(100% - 20px); }
+
+.user-block {
+  color: var(--color_background);
+  font-size: 16px;
+  flex: 0 0 auto;
+  width: 383px;
+  background: var(--color_theme);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 25px 10px; }
+
+.about__title {
+  margin: 0 0 15px;
+  font: 32px/1.2 MyriadProRegular, sans-serif;
+  color: #000000; }
+
+.about__vendor {
+  display: inline-block;
+  font-weight: 700; }
+
+.about__price {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color_accent);
+  margin-left: 23px; }
+
+.about__description {
+  margin-top: 40px; }
+
+.about__ul {
+  margin-top: 0;
+  list-style: none; }
+  .about__ul > li:before {
+    content: "-";
+    padding-right: 5px; }
+
+.about__bold {
+  font-weight: 700; }
+
+.about__italic {
+  font-style: italic; }
+
+.vendor {
+  color: var(--color_theme); }
+
+.chat__title {
+  font-size: 30px;
+  font-weight: 700; }
+  .chat__title--connected {
+    font-size: 18px; }
+
+.chat__subtitle {
+  font-size: 14px; }
+
+.chat__vendor {
+  color: var(--color_theme); }
+  .chat__vendor--online:after {
+    content: "·";
+    font-size: 56px;
+    line-height: 12px;
+    vertical-align: middle;
+    color: var(--color_accent); }
+
+.chat__messages {
+  height: 220px;
+  font-size: 14px; }
+
+.chat__message {
+  display: flex;
+  align-items: center;
+  align-content: flex-end; }
+  .chat__message--vendor > .chat__text {
+    padding: 6px;
+    border-right: 5px solid var(--color_theme); }
+  .chat__message--user {
+    flex-direction: row-reverse;
+    align-items: normal; }
+  .chat__message--user > .chat__text {
+    padding: 6px;
+    border-left: 5px solid var(--color_theme); }
+
+.chat__icon {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 6px; }
+
+.chat__text {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 400px; }
+
+.chat__send {
+  width: 100%;
+  border-bottom: 1px solid var(--color_theme);
+  display: flex; }
+
+.chat__submit {
+  background: none;
+  border: none; }
+
+.chat__input {
+  border: none;
+  background: none;
+  width: 100%;
+  flex-grow: 1; }
+
+.footer {
+  background-color: var(--color_theme);
+  color: var(--color_background);
+  padding: 16px 0 15px;
+  text-align: center;
+  width: 100%; }
