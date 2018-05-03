@@ -20,8 +20,12 @@
     }
   }
   &__area {
+    margin-bottom: 17px;
   }
   &__messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 220px;
     font-size: 14px;
   }
@@ -29,17 +33,21 @@
     display: flex;
     align-items: center;
     align-content: flex-end;
-    //border-color: var(--color_theme);
+    margin: 15px 0px;
+    &--vendor {
+      margin-right: 56px;
+    }
     &--vendor > .chat__text {
-      padding: 6px;
+      padding: 0 6px 0 0;
       border-right: 5px solid var(--color_theme);
     }
     &--user {
       flex-direction: row-reverse;
       align-items: normal;
+      margin-left: 56px;
     }
     &--user > .chat__text {
-      padding: 6px;
+      padding: 0 0 0 6px;
       border-left: 5px solid var(--color_theme);;
     }
   }
